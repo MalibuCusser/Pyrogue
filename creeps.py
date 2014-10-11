@@ -87,8 +87,8 @@ class Player(Creep):
 
 
     def get_collisions(self):
-        if pygame.sprite.spritecollideany(self, self.game.wall_sprites_group):
-            self.position = self.prev_position
+        #if pygame.sprite.spritecollideany(self, self.game.wall_sprites_group):
+            #self.position = self.prev_position
         combat = Combat()
         battles = pygame.sprite.spritecollide(self, self.game.creep_group, False)
         for b in battles:
