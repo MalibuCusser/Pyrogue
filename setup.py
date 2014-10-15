@@ -1,4 +1,6 @@
 from distutils.core import setup
+import py2exe
+
 
 setup(
     name='Pyrogue',
@@ -8,5 +10,6 @@ setup(
     license='',
     author='Malibu',
     author_email='',
-    description=''
+    description='',
+    console=['main.py']
 )

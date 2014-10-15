@@ -128,10 +128,6 @@ class Level(object):
         for i in range(0,rooms_down):
             for j in range(0,rooms_across):
                 walls.add(self.draw_room(self.rooms[(i*rooms_across)+j], (j*room_size_x, i * room_size_y)))
-        # for r in range(0,6):
-        #     walls.add(self.draw_room(self.rooms[r], (r*room_size_x,0)))
-        # for r in range(6, 12):
-        #     walls.add(self.draw_room(self.rooms[r], ((r-6)*room_size_x, room_size_y)))
         return walls
 
     def generate_room(self):
@@ -171,3 +167,8 @@ class Level(object):
         return new_room
 
 
+class Room(object):
+    pass
+
+class Tile(object):
+    pass
